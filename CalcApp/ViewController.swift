@@ -17,6 +17,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         costsArray.removeAll()
         costField.addTarget(self, action: #selector(costFieldDidChange), for: .editingChanged)
         costField.keyboardType = UIKeyboardType.numberPad
+        let userDefaults = UserDefaults.standard
+        userDefaults.removeObject(forKey: "item")
     }
     
     var cost:Double = 0
