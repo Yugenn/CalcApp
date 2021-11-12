@@ -27,7 +27,7 @@ class SecondViewController: UIViewController {
             }
             resultLabel.text = String(format: "%.0f", sum)
         } else {
-            resultLabel.text = "文字を入力してください"
+            resultLabel.text = "値を追加してください"
         
         }
         
